@@ -1,0 +1,164 @@
+/* For thin clickable elements like this, 
+    increasing the clickable area around 
+    by providing a larger width and height  
+*/
+.optionsVertical    {
+    background-position: -460px -767px;
+    width: 12px;
+    height: 25px;
+    background-color:transparent;
+    padding: 0px;
+}
+.optionsVertical:hover    {
+    background-position: -473px -767px;
+    width: 12px;
+    height: 25px;
+    background-color:transparent;
+    padding: 0px;
+}
+
+
+.optionsDropdown.open .optionsVertical    {
+    position: relative;
+    left: 159px;
+}
+
+
+.addBtn {
+    background-position: -809px -485px;
+    width: 16px !important;
+    height: 17px !important;
+}
+
+.objectDropdown     {
+    background-position: -521px -657px;
+    width: 9px !important;
+    height: 5px !important;
+}
+
+
+
+.optionsDropdown.open .addBtn {
+    position: relative;
+    left: 160px
+}
+
+.optionsDropdown    {
+    position: relative;
+    display: none;
+    background-color:transparent;
+    height: 1.7em;
+}
+
+.optionsDropdown.open   {
+    height: auto;
+}
+
+.addBtn:hover   {
+    background-position:-809px -542px
+}
+
+.editBtn    {
+    background-position:-462px -486px;
+    width: 16px;
+    height: 15px;
+}
+
+.editBtn:hover    {
+    background-position:-462px -543px;
+}
+
+.deleteBtn    {
+    background-position:-592px -485px;
+    width: 14px;
+    height: 17px;
+}
+
+.deleteBtn:hover    {
+    background-position: -592px -542px;
+}
+
+.duplicateBtn    {
+    background-position:-528px -485px;
+    width: 15px;
+    height: 17px;
+}
+
+.duplicateBtn:hover {
+    background-position: -528px -542px;
+}
+
+
+.optionsDropdown.open .arrow    {
+    left: 2.3em;
+    top: -1.46em;
+}
+
+
+ul.dropdown-menu.optionDropdownMenu {
+    position: relative;
+    border-radius: 0px;
+    -moz-transform: translateY(-1.8em);
+    left:50px;
+}
+
+.optionsButton,
+.optionsButton:hover  {
+    border-style: none;
+}
+
+.treeBranch     {
+    border-radius:0%;
+    margin-left: 0px !important;
+}
+
+.addNewServiceLink  {
+    text-decoration:underline;
+}
+
+.addNewServiceWrap  {
+    margin-top:10px;
+}
+
+.activationStatus  {
+    float: left;
+}
+
+
+.leftBtn, .rightBtn     {
+    vertical-align: middle;
+}
+
+.actionBtn  {
+    padding-top: 0px;
+}
+
+.actionBtns {
+    display: inline-block;
+    float:right;
+}
+
+
+.btnWrapperStickyTop     {
+    position: fixed;
+    bottom: 13px;
+    z-index: 5;
+    right: 20px;
+}
+
+.btnWrapperStickyBottom   {
+    position: fixed;
+    right: 20px;
+    bottom: 13px;
+    z-index: 5;
+}
+
+.btnWrapperBottom   {
+    position: inherit;
+    margin: 20px;
+    z-index: 5;
+}
+
+.btnWrapper {
+    margin-right: 15px;
+}

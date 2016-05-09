@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="scripts/bootstrap-3/css/bootstrap.css" />
+	
+		<link rel="stylesheet" type="text/css" href="styles/buttons.css" />
+		<link rel="stylesheet" type="text/css" href="styles/jsonEditorElements.css" />
+	
+		
+		<script type="text/javascript" src="scripts/jquery-2.1.1.js"></script>
+		<script type="text/javascript" src="scripts/bootstrap-3/js/bootstrap.js"></script>
+		
+		<script type="text/javascript" src="scripts/common.js"></script>
+		<script type="text/javascript" src="scripts/jsonExtractor/init.js"></script>
+		<script type="text/javascript" src="scripts/jsonExtractor/JsonExtractor.js"></script>
+		<script type="text/javascript" src="scripts/jsonExtractor/util/JsonExtractorUtil.js"></script>
+		<script type="text/javascript" src="scripts/jsonExtractor/util/JsonValidator.js"></script>
+
+		<script type="text/javascript" src="scripts/uiFieldsPopulator/view/ArrayElementModifiers.js"></script>
+		<script type="text/javascript" src="scripts/uiFieldsPopulator/view/InputElementInitiator.js"></script>
+		<script type="text/javascript" src="scripts/uiFieldsPopulator/view/JsonEditorFieldsPopulator.js"></script>
+		<script type="text/javascript" src="scripts/uiFieldsPopulator/init.js"></script>
+
+		<script type="text/javascript" src="scripts/uiBuilder/model/builderDefaults.js"></script>
+		<script type="text/javascript" src="scripts/uiBuilder/view/InputFieldsPostEventView.js"></script>
+
+		<script type="text/javascript" src="scripts/uiBuilder/ListBuilder.js"></script>
+		<script type="text/javascript" src="scripts/uiBuilder/JsonEditorBuilder.js"></script>
+
+		<script type="text/javascript" src="scripts/uiBuilder/controller/InputCustomizers.js"></script>
+		<script type="text/javascript" src="scripts/uiBuilder/controller/JsonEditorBtnController.js"></script>
+		<script type="text/javascript" src="scripts/uiBuilder/init.js"></script>
+		<script type="text/javascript" src="jsonSchema.js"></script>
+		
+		<style>
+		a.addArrayItem:before{
+			content:"\002b"; 
+			display: block; 
+			position:absolute;
+			font-family:"Glyphicons Halflings";
+			font-size: 10px;
+			margin-top: 3px;
+		}
+		img.removeArrayElement {
+			z-index: 1000;
+			position: relative;
+		}
+		img.removeArrayElement + div:before {
+			content: "\e014";
+			display: block;
+			position: absolute;
+			font-family: "Glyphicons Halflings";
+			font-size: 10px;
+			margin-top: -12px;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="jsonContainer"></div>
+		<script>			
+			var jsonUIBuilderInititator = new JsonUIBuilderInitiator();
+			jsonUIBuilderInititator.init(schema, $("#jsonContainer"));
+		</script>
+	</body>
+</html>

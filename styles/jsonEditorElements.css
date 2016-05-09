@@ -1,0 +1,160 @@
+
+.input-group .objectElement > .labelElem > label {
+    margin-left: 30px;
+}
+
+
+.input-group .arrayElement > .labelElem > label {
+    margin-left: 30px;
+}
+
+.objectElement .labelElem   {
+    padding-left:43px;
+}
+
+.objectElements .inputGroupElement > .objectElement > .labelElem    {
+    padding-left: 30px;
+}
+
+.inputElem .inputElement, 
+.inputElem .inputGroupElement {
+    width: 100%;
+}
+
+
+.objectElement .propertyGroup .labelElem  {
+    padding-left: 72px;
+}
+
+.arrayElement .inputElem .inputElement .inputDescriptor, 
+.objectElement .inputElem .inputElement .inputDescriptor,
+.arrayElement .inputElem .inputGroupElement .inputDescriptor,
+.objectElement .inputElem .inputGroupElement .inputDescriptor {
+    width: 7%;
+}
+
+
+
+.checkboxElement._parent_.inputGroupElement   {
+    text-align: left;
+    display: inline-table;
+    float: left;
+    width: 6%;
+}
+
+.inputElement.checkboxElement    {
+    text-align: left;
+    display: inline-table;
+    float: left;
+    width: 17px;
+    transform: translateY(-0.9em);
+}
+
+
+.inputElement   {
+    border-radius:0%;
+}
+
+
+
+.btnWrapperSave {
+    display:none;
+}
+
+
+.addArrayItem, .showHideObjectItem   {
+    cursor:pointer;
+    -moz-transform:translateY(-1.8em)
+}
+
+
+.removeArrayElement {
+    display:block;
+    cursor:pointer;
+}
+
+
+
+.arrayElements > .listgroupitem > .inputElem:nth-child(2n+1) {
+    border-left-style: solid;
+    border-left-color: #383838;
+    border-left-width:4px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(128, 128, 128, 0.18);
+    border-top-style: solid;
+    border-top-color: rgba(128, 128, 128, 0.18);
+}
+
+.arrayElements > .listgroupitem > .inputElem:nth-child(2n) {
+    border-left-style: solid;
+    border-left-color: #999999;
+    padding-left: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(128, 128, 128, 0.18);
+    border-top-style: solid;
+    border-top-color: rgba(128, 128, 128, 0.18);
+}
+
+.arrayElements > .listgroupitem > .inputElem > .inputGroupElement > .removeArrayElement  {
+    background-position: -583px -654px;
+    width: 9px;
+    height: 9px;
+}
+
+.descTooltip    {
+    vertical-align:super;
+}
+
+
+.labelElem label   {
+    white-space: nowrap;
+}
+
+
+.labelElem label span   {
+    max-width: 150px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+}
+
+
+.inputElement[disabled] {
+    cursor: text !important;
+}
+
+
+.labelElem  {
+    border-width:1px;
+    border-color: rgb(125, 125, 125);
+}
+
+.inputElem  {
+    border-width:1px;
+    border-color: rgb(125, 125, 125);
+    padding-bottom: 2px;
+}
+
+.arrayCntrlrIcon, .cntrlrIcon, objectCntrlrIcon    {
+    padding-top: 0px;
+    padding-right: 0px;
+    vertical-align:middle;
+}
+
+
+i.glyphicons.glyphicons-expand.btn-xs.objectCntrlrIcon {
+    font-size: 15px;
+}
+
+.requiredInputMissing  {
+    border: solid red 1px;
+}
+
+.arrayElements > .listgroupitem > .inputElem > .inputGroupElement  {
+    display: table !important;
+}
+
+.inputGroupElement  {
+    display: block !important;
+}
