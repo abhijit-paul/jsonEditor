@@ -30,7 +30,7 @@
 		<script type="text/javascript" src="scripts/uiBuilder/controller/JsonEditorBtnController.js"></script>
 		<script type="text/javascript" src="scripts/uiBuilder/init.js"></script>
 		<script type="text/javascript" src="jsonSchema.js"></script>
-		
+		<script type="text/javascript" src="menu-fs.js"></script>
 		<style>
 		a.addArrayItem:before{
 			content:"\002b"; 
@@ -58,7 +58,8 @@
 		<div id="jsonContainer"></div>
 		<script>			
 			var jsonUIBuilderInititator = new JsonUIBuilderInitiator();
-			jsonUIBuilderInititator.init(schema, $("#jsonContainer"));
+			//jsonUIBuilderInititator.init(schema, $("#jsonContainer"));
+			jsonUIBuilderInititator.init(another_json, $("#jsonContainer"));
 		</script>
 	</body>
 </html>
