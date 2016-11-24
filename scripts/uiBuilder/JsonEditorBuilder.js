@@ -181,6 +181,9 @@
 
         propLabel = $(builderDefaults.propLabelTmplt);
         propLabel.append("<span/>");
+        if(prop.title === undefined)    {
+            prop.title = propName;
+        }
         propLabel.find("span").text(prop.title);
         propLabel.find("span").attr("title", prop.title);
 
